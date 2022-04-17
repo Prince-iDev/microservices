@@ -11,7 +11,7 @@ type Package struct {
 	l *log.Logger
 }
 
-func newPackage(l *log.Logger) *Package {
+func NewPackage(l *log.Logger) *Package {
 	return &Package{l}
 }
 func (p *Package) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
